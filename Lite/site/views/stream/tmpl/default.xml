@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+        <layout title="Standard Message Stream">
+                <message>Your messages, those of the people you follow and messages metioning you.</message>
+        </layout>
+        <state>
+                <name>Standard Message Stream</name>
+                <description>Display various Twitter message streams. Control access permission to the Twitter posting box.</description>
+                <params>
+                        <param name="canpost" type="usergroup" multiple="true" default="" label="Posting Permission Level" description="Determines which access level as the ability to post a new message." />
+			<param name="username" type="text" default="" label="Twitter Username" />
+			<param name="password" type="password" label="Twitter Password" />
+			<param name="user" type="list" default="screen_name" label="User Name Display" description="Display the screen name or real name of the poster">
+				<option value="screen_name">Screen Name</option>
+				<option value="name">Name</option>
+			</param>
+			<param name="cache" type="list" default="15" label="Cache Time" description="The number of minutes to cache the Twitter messages. This saves on API calls. Cache is refreshed when you post a new message">
+				<option value="">Use Global</option>
+				<option value="1">1</option>
+				<option value="5">5</option>
+				<option value="10">10</option>
+				<option value="15">15</option>
+				<option value="20">20</option>
+				<option value="25">25</option>
+				<option value="30">30</option>
+			</param>
+			<param type="radio" name="newwindow" default="0" label="Open Links in New Window" description="When a user clicks a link (including user names and hashtags), the page will be opened in a new window">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param type="spacer" />
+			<param type="radio" name="retweet" default="0" label="Enable ReTweet" description="Allows simple ReTweeting (RT) of a post">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param type="radio" name="reply" default="0" label="Enable Replies" description="Allows replying to a tweet">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param type="list" name="prefix" default="" label="Post Prefix" description="Prepend the current user's name to the Tweet being posted">
+				<option value="">None - No Prefix</option>
+				<option value="username">Username / Login Name</option>
+				<option value="name">Full Name</option>
+			</param>
+			<param type="radio" name="show_latest" default="1" label="Show Latest Post" description="Display the latest status update from the configured Twitter account">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param type="imagelist" name="followme_image" directory="/images/stories" hide_default="1" default="" label="'Follow Us' Image Link" description="The image to use to link to your Twitter page to allow people to follow you" />
+			<param type="radio" name="show_friends" default="1" label="Show Main Stream" description="Display the main stream including your tweets and those of the friends you follow">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param type="radio" name="show_replies" default="0" label="Show Replies" description="Display replies and messages including @username">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param type="radio" name="show_useronly" default="0" label="Show Only My Tweets" description="Display tweets from your account, excluding others.">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param type="spacer" />
+			<param type="text" name="friends_title" default="Our Friends" label="Friends Timeline Title" description="The title to apply for the Friends (default) timeline" />
+			<param type="text" name="replies_title" default="@Replies" label="Replies/Menionts Title" description="The title to apply for replies and mentions" />
+			<param type="text" name="useronly_title" default="Our Tweets" label="User Only Title" description="The title to apply for posts for the configured account only" />
+                </params>
+        </state>
+</metadata>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="STANDARDMESSAGESTREAM">
+		<message>STANDARDMESSAGESTREAMDESC</message>
+	</layout>
+	<state>
+		<name>STANDARDMESSAGESTREAM</name>
+		<description>STANDARDMESSAGESTREAMDESC2</description>
+		<params>
+			<param name="canpost" type="usergroup" multiple="true" default=""
+				label="POSTINGPERMISSIONLEVEL" description="POSTINGPERMISSIONLEVELDESC" />
+			<param name="username" type="text" default="" label="TWITTERUSERNAME" />
+			<param name="password" type="password" label="TWITTERPASSWORD" />
+			<param name="user" type="list" default="screen_name" label="USERNAMEDISPLAY"
+				description="USERNAMEDISPLAYDESC">
+				<option value="screen_name">SCREENNAME</option>
+				<option value="name">NAME</option>
+			</param>
+			<param name="cache" type="list" default="15" label="CACHETIME"
+				description="CACHETIMEDESC">
+				<option value="">Use Global</option>
+				<option value="1">1</option>
+				<option value="5">5</option>
+				<option value="10">10</option>
+				<option value="15">15</option>
+				<option value="20">20</option>
+				<option value="25">25</option>
+				<option value="30">30</option>
+			</param>
+			<param type="radio" name="newwindow" default="0" label="NEWWINDOW"
+				description="NEWWINDOWDESC">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param name="url_api" type="list" label="URLSHORTSERVICE"
+				description="URLSHORTSERVICEDESC">
+				<option value="trim">trim</option>
+				<option value="tinyurl">tinyurl</option>
+			</param>
+			<param name="pic_thumb" default="1" type="radio" label="TWITPICTHUMBS" description="TWITPICTHUMBSDESC">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param type="text" name="hashtags" label="POSTHASHTAGS"
+				description="POSTHASHTAGSDESC" />
+			<param type="radio" name="requiretags" default="0"
+				label="REQUIREHASHTAGS" description="REQUIREHASHTAGSDESC">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param type="spacer" />
+			<param type="radio" name="retweet" default="0" label="ENABLERETWEET"
+				description="ENABLERETWEETDESC">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param type="radio" name="reply" default="0" label="ENABLEREPLIES"
+				description="ENABLEREPLIESDESC">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param type="radio" name="twitpic" default="1" label="ENABLETWITPICPOST"
+				description="ENABLETWITPICPOSTDESC">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param type="list" name="prefix" default="" label="POSTPREFIX"
+				description="POSTPREFIXDESC">
+				<option value="">POSTPREFIXNONE</option>
+				<option value="username">POSTPREFIXUSERNAME</option>
+				<option value="name">POSTPREFIXFULLNAME</option>
+			</param>
+			<param type="radio" name="show_latest" default="1" label="SHOWLATESTPOST"
+				description="SHOWLATESTPOSTDESC">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param type="imagelist" name="followme_image" directory="/images/stories"
+				hide_default="1" default="" label="FOLLOWLINKIMAGE" description="FOLLOWLINKIMAGEDESC" />
+			<param type="radio" name="show_friends" default="1"
+				label="SHOWMAINSTREAM" description="SHOWMAINSTREAMDESC">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param type="radio" name="show_replies" default="0" label="SHOWREPLIES"
+				description="SHOWREPLIESDESC">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param type="radio" name="show_useronly" default="0" label="SHOWONLYME"
+				description="SHOWONLYMEDESC">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param type="spacer" />
+			<param type="text" name="friends_title" default="OURFRIENDS"
+				label="FRIENDSTITLE" description="FRIENDSTLDESC" />
+			<param type="text" name="replies_title" default="REPLIES"
+				label="REPLIESTITLE" description="REPLIESTLDESC" />
+			<param type="text" name="useronly_title" default="OURTWEETS"
+				label="USERONLYTITLE" description="OURTWEETSTLDESC" />
+		</params>
+	</state>
+</metadata>

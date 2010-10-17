@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="SEARCHRESULTS">
+		<message>AUTOUPDATESTREAM</message>
+	</layout>
+	<state>
+		<name>SEARCHRESULTS</name>
+		<description>DISPLAYVARIOUSMESSAGESTREAMS</description>
+		<params>
+			<param name="canpost" type="usergroup" multiple="true" default=""
+				label="POSTINGPERMISSIONLEVEL"
+				description="POSTINGPERMISSIONLEVELDESC" />
+			<param name="user" type="list" default="screen_name" label="USERNAMEDISPLAY"
+				description="USERNAMEDISPLAYDESC">
+				<option value="screen_name">SCREENNAME</option>
+				<option value="name">NAME</option>
+			</param>
+			<param type="text" name="auto_follow" label="AUTOFOLLOW" description="AUTOFOLLOWDESC" default=""/>
+			<param type="list" name="frequency" default="10" label="UPDATEFREQUENCY" description="UPDATEFREQUENCYDESC">
+				<option value="5">5</option>
+				<option value="10">10</option>
+				<option value="15">15</option>
+				<option value="20">20</option>
+				<option value="25">25</option>
+				<option value="30">30</option>
+				<option value="60">60</option>
+				<option value="120">120</option>
+			</param>
+			<param type="list" name="limit" default="10" label="MAXRESULTS" description="MAXRESULTSDESC">
+				<option value="5">5</option>
+				<option value="10">10</option>
+				<option value="15">15</option>
+				<option value="20">20</option>
+				<option value="25">25</option>
+				<option value="30">30</option>
+				<option value="50">50</option>
+				<option value="100">100</option>
+			</param>
+			<param name="url_api" type="list" label="URLSHORTSERVICE" description="URLSHORTSERVICEDESC">
+				<option value="trim">trim</option>
+				<option value="tinyurl">tinyurl</option>
+			</param>
+			<param name="pic_thumb" default="1" type="radio" label="TWITPICTHUMBS" description="TWITPICTHUMBSDESC">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param name="target" default="1" type="radio" label="NEWWINDOW" description="NEWWINDOWDESC">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param type="text" name="lang" label="LANGUAGE" description="LANGUAGEDESC" default="en" />
+			<param type="spacer" />
+			<param type="text" name="search1" label="SEARCH1" />
+			<param type="text" name="search2" label="SEARCH2" />
+			<param type="text" name="search3" label="SEARCH3" />
+			<param type="text" name="hashtags" label="POSTHASHTAGS" description="POSTHASHTAGSDESC" />
+			<param type="radio" name="requiretags" default="0" label="REQUIREHASHTAGS" description="REQUIREHASHTAGSDESC">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param type="spacer" />
+			<param type="radio" name="retweet" default="0" label="ENABLERETWEET"
+				description="ENABLERETWEETDESC">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param type="radio" name="reply" default="0" label="ENABLEREPLIES"
+				description="ENABLEREPLIESDESC">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param type="radio" name="twitpic" default="1" label="ENABLETWITPICPOST"
+				description="ENABLETWITPICPOSTDESC">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+		</params>
+	</state>
+</metadata>

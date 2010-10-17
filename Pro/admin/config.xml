@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<params>
+		<param type="radio" name="credit" default="1" label="Show Footer" description="Support BizTweet by displaying a link to developer's website.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+</config>

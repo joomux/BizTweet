@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" type="plugin" group="content" method="upgrade">
+	<name>Content - BizTweet</name>
+	<author>jTips / EvolutionEngin</author>
+	<creationDate>October 2009</creationDate>
+	<copyright>Copyright (c) 2009 jTips and EvolutionEngin. All rights
+		reserved.</copyright>
+	<license>GPLv3</license>
+	<authorEmail>sales@evolutionengin.com</authorEmail>
+	<authorUrl>www.evolutionengin.com</authorUrl>
+	<version>1.0.6</version>
+	<description><![CDATA[
+	Display a Twitter stream below your content.
+	
+	To use, simply add {biztweet}search{/biztweet} to you content articles, where 'search' is the term you want to search for.
+	You can add multiple search streams with {biztweet}search1{/biztweet}{biztweet}search1{/biztweet} or search for multiple words with 
+	{biztweet}search1 search2{/biztweet}.
+	]]></description>
+	<files>
+		<filename plugin="biztweet">biztweet.php</filename>
+		<filename plugin="biztweet">biztweet/btscripts.js</filename>
+		<filename plugin="biztweet">biztweet/btstyle.css</filename>
+		<filename plugin="biztweet">biztweet/index.html</filename>
+		<filename plugin="biztweet">biztweet/loading.gif</filename>
+	</files>
+	<params>
+		<param type="text" name="title" default="" label="Stream Title" description="A heading to display at the top of the stream." />
+		<param type="list" name="frequency" default="10" label="Update Frequency" description="Determines how often the search results are updated (in seconds)">
+			<option value="5">5</option>
+			<option value="10">10</option>
+			<option value="15">15</option>
+			<option value="20">20</option>
+			<option value="25">25</option>
+			<option value="30">30</option>
+			<option value="60">60</option>
+			<option value="120">120</option>
+		</param>
+		<param type="list" name="limit" default="10" label="Max Results" description="The maximum number of results to display at any one time">
+			<option value="5">5</option>
+			<option value="10">10</option>
+			<option value="15">15</option>
+			<option value="20">20</option>
+			<option value="25">25</option>
+			<option value="30">30</option>
+			<option value="50">50</option>
+			<option value="100">100</option>
+		</param>
+		<param name="target" default="1" type="radio" label="Open Links in New Window" description="When a user clicks a link (including user names and hashtags), the page will be opened in a new window">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="pic_thumb" default="1" type="radio" label="TwitPic Thumbnails" description="TwitPic links will load as thumbnail images.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param type="text" name="lang" label="Language" description="ISO 639-1 language code to restrict tweets to this language only" default="en" />
+	</params>
+</install>

@@ -1,0 +1,73 @@
+/**
+ * Website: www.jtips.com.au
+ * @author Jeremy Roberts
+ * @copyright Copyright &copy; 2009, EvolutionEngin
+ * @license Commercial - See website for details
+ * 
+ * @since 1.0 - 02/06/2009
+ * @version 1.0.0
+ * @package BizTweet
+ */
+
+ul.timeline {
+        list-style:none outside none;
+        padding-left:10px;
+}
+
+ul.timeline li:first-child {
+        border-top:1px dashed #D2DADA;
+}
+
+ul.timeline li {
+        border-bottom:1px dashed #D2DADA;
+        line-height:1.1em;
+        padding:0.7em 0 0.6em;
+        position:relative;
+}
+
+ul.timeline li:hover {
+	background-color:lightyellow;
+}
+
+ul.timeline .biztweet_image {
+        height:50px;
+        width:50px;
+        position:absolute;
+        left:0;
+        margin:0 10px 0 5px;
+        overflow:hidden;
+        display:block;
+}
+
+ul.timeline span.biztweet_body {
+        margin-left:65px;
+        min-height:50px;
+        overflow:hidden;
+        display:block;
+}
+
+td#btcharcount {
+        vertical-align:middle;
+        color:lightgrey;
+        text-align:center;
+}
+
+div#btlatest {}
+
+p#btfollowme {
+	text-align:center;
+}
+
+div.bttime {
+	font-size:smaller;
+	font-style:italic;
+}
+
+div#bt_search_area {
+	text-align:right;
+}
+div#bt_search_area img {
+	position:relative;
+	top:4px;
+	cursor:pointer;
+}
